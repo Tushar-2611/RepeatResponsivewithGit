@@ -1,0 +1,697 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* Force scrollbar */
+html {
+    overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type=radio] {
+    vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type=button],
+input[type=submit],
+button {
+    cursor: pointer;
+}
+
+strong {
+    font-weight: bold;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+em {
+    font-style: italic;
+}
+
+img {
+    width: 100%;
+    border: 0;
+    vertical-align: middle;
+}
+
+sub,
+sup {
+    vertical-align: baseline;
+    position: relative;
+    font-size: 55%;
+    line-height: 0;
+}
+
+sup {
+    top: -0.7em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+        ========================== */
+.cf:before,
+.cf:after {
+    display: table;
+    content: " ";
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/* for all */
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* for wrapper */
+.wrapper {
+    max-width: 1360px;
+    width: 77%;
+    margin: 0 auto;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for Section list and Global List */
+.global-list p {
+    color: black;
+    padding-right: 2.2rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: rgb(185, 185, 185);
+    font-weight: 600;
+}
+
+
+.global-list {
+    padding: 7.5% 0 0 0;
+    display: flex;
+}
+
+/* HomePage Styling Attributes */
+.homepage {
+    padding-top: 40px;
+    /* background-color: aliceblue; */
+    background-image: linear-gradient(to right, rgb(129, 124, 124), 50%, rgba(128, 128, 128, 0)), url(/assets/images/bank.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    /* Adjust the width as needed */
+}
+
+.logo-img {
+    width: 2.2em;
+    height: auto;
+}
+
+.header-class {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.header-h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.header-h2 {
+    font-size: 4em;
+    font-weight: 500;
+    margin-top: 10%;
+    color: white;
+}
+
+.header-p {
+    display: flex;
+    justify-content: left;
+    padding-right: 30%;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8em;
+    font-weight: 600;
+    margin-top: 1%;
+}
+
+.button {
+    background-color: rgb(214, 44, 44);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 1.8em 8em;
+    margin-top: 4.7%;
+    margin-bottom: 20%;
+}
+
+
+/* Benefits Styling Attributes */
+.benefits-h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 7.5% 0 7% 0;
+    color: navy;
+}
+
+.benefits img {
+    width: 4em;
+    height: auto;
+}
+
+/* Working Stying Attributes */
+
+.working-h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 7.5% 0;
+    color: navy;
+    text-align: center;
+}
+
+.working {
+    padding-bottom: 10%;
+}
+
+.working-heading {
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin: 8.5% 0 8% 0;
+    color: navy;
+    text-align: center;
+}
+
+.working-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.working p {
+    font-size: 1em;
+    margin-top: 0;
+    padding: 0;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Sequence Styling Attributes */
+.sequence {
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 13%;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.circle {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    background-color: orange;
+    text-align: center;
+    line-height: 4rem;
+    color: white;
+}
+
+.line {
+    display: inline-block;
+    height: 0.5rem;
+    width: 40%;
+    background-color: orange;
+    content-visibility: hidden;
+}
+
+/* Suggestion Styling Attributes */
+
+.suggestion-h4 {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-top: 9%;
+    color: navy;
+    text-align: center;
+}
+
+.suggestion-p {
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: navy;
+    line-height: 2.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 1% 0;
+    padding: 0 20%;
+}
+
+.suggestion button {
+    margin-top: 3%;
+    margin-bottom: 8.5%;
+    padding: 1.5em 4em;
+    font-size: 1em;
+    margin-left: 35%;
+}
+
+.suggestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    padding-top: 1em;
+}
+
+a {
+    color: white;
+    /* font-weight: 600; */
+}
+
+
+/* Footer Styling Attributes */
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    align-items: start;
+    padding-top: 100px;
+    padding-bottom: 110px;
+    gap: 20px;
+}
+
+.footer-h3 {
+    padding: 3px 0;
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: navy;
+}
+
+.footer a {
+    color: navy;
+}
+
+.footer p {
+    margin: 13px 0;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding-right: 20%;
+    line-height: 1.8em;
+}
+
+/* Large tablets or small desktops (1024px and below) */
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 85%;
+        /* Reduce width slightly for centering */
+    }
+
+    .header-h2 {
+        font-size: 3em;
+    }
+
+    .header-p {
+        font-size: 1.1rem;
+        padding-right: 20%;
+    }
+
+    .button {
+        padding: 1.5em 6em;
+    }
+
+    .global-list {
+        padding-top: 5%;
+        gap: 1.5rem;
+        /* Increase spacing between items for clarity */
+    }
+
+    .footer,
+    .working-list {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .suggestion-p {
+        padding: 0 15%;
+    }
+
+    .footer p {
+        font-size: 0.9em;
+    }
+
+    .footer-h3 {
+        font-size: 1em;
+    }
+
+    .footer-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .circle {
+        width: 9em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .header-h2 {
+        font-size: 2.5em;
+    }
+
+    .header-p {
+        font-size: 1rem;
+        padding-right: 15%;
+    }
+
+    .button {
+        padding: 1.5em 4em;
+    }
+
+    .suggestion-p {
+        padding: 0 10%;
+        font-size: 1em;
+    }
+
+    .footer-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .line {
+        width: 80%;
+    }
+
+    .working-h3,
+    .benefits-h3 {
+        font-size: 1em;
+        font-weight: bolder;
+    }
+
+    .suggestion-h4 {
+        font-size: 1.6rem;
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer p,
+    .footer-h3 {
+        font-size: 0.8em;
+    }
+
+    .footer-list {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .suggestion button {
+        max-width: 90%;
+        margin-left: 40%;
+        font-size: 0.6em;
+        margin-bottom: 10%;
+    }
+}
+
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+    .wrapper {
+        width: 85%;
+        /* Reduce width slightly for centering */
+    }
+
+    .global-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-h2 {
+        font-size: 2em;
+        margin-top: 10%;
+    }
+
+    .header-p {
+        font-size: 0.9rem;
+        padding-right: 10%;
+    }
+
+    .benefits {
+        padding: 2% 10%;
+    }
+
+    .button {
+        padding: 1em 3em;
+        margin-top: 10%;
+    }
+
+    .working-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10%;
+    }
+
+    .sequence {
+        display: none;
+    }
+
+    .suggestion-p {
+        padding: 0 15%;
+        font-size: 0.6rem;
+        line-height: 1.6em;
+    }
+
+    .suggestion button {
+        font-size: 0.6em;
+        margin-bottom: 10%;
+        margin-left: 25vw;
+    }
+
+    .suggestion-h4 {
+        font-size: 1.6rem;
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer p,
+    .footer-h3 {
+        font-size: 0.8em;
+    }
+
+    .footer-list {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+}
+
+/* Extra Small devices (very small phones, 400px and below) */
+@media (max-width: 400px) {
+    .header-h2 {
+        font-size: 1.5em;
+    }
+
+    .header-p {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        padding: 1em 2em;
+    }
+
+    .suggestion-p {
+        padding: 0 2%;
+    }
+
+    .footer p,
+    .footer-h3 {
+        font-size: 0.7em;
+    }
+
+    .suggestion-p {
+        padding: 5% 10%;
+        font-size: 0.8em;
+        line-height: 2em;
+    }
+
+    .suggestion-h4 {
+        font-size: 1.2rem;
+    }
+
+    .suggestion button {
+        max-width: 90%;
+        margin-left: 25%;
+        font-size: 0.6em;
+        margin-bottom: 10%;
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer p,
+    .footer-h3 {
+        font-size: 0.8em;
+    }
+
+    .footer-list {
+        padding-top: 0;
+        padding-left: 0;
+    }
+}
